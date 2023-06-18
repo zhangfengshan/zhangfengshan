@@ -1,47 +1,4 @@
-local currentver = "0.0.1"
-local gui_data = nil
-local gui_data_s, gui_data_e = nil
-task.spawn(function()
-gui_data_s, gui_data_e = pcall(function()
-	gui_data = game:HttpGet(("https://pastebin.com/raw/ctZzfsWs"), true)
-	gui_data = game:GetService("HttpService"):JSONDecode(gui_data)
-end)
-if gui_data_e then
-game.StarterGui:SetCore("SendNotification", {
-  Title = "微山工作室";
-  Text = "无法获取注入器数据";
-  Icon = nil;
-  Duration = 5
-})
-game.StarterGui:SetCore("SendNotification", {
-  Title = "微山工作室";
-  Text = "正在重新发起请求";
-  Icon = nil;
-  Duration = 5
-})
-loadstring(game:HttpGet('https://raw.githubusercontent.com/zhangfengshan/new/main/abcdefghij.lua', true))()
-end
-if gui_data ~= nil and gui_data_s then
-	
-		if currentver ~= gui_data.ver or gui_data.ver ~= currentver then
-			game.StarterGui:SetCore("SendNotification", {
-  Title = "微山工作室";
-  Text = "你正在使用过时的版本";
-  Icon = nil;
-  Duration = 5
-})
-		game.StarterGui:SetCore("SendNotification", {
-  Title = "微山工作室";
-  Text = "正在重新发起请求";
-  Icon = nil;
-  Duration = 5
-})
-loadstring(game:HttpGet('https://raw.githubusercontent.com/zhangfengshan/new/main/abcdefghij.lua', true))()
-		end
-	wsun = 1
-end
-end)
-if wsun ==1 then
+
 function callback(Text)
         if Text == "确定" then
             loadstring(game:HttpGet('https://pastebin.com/raw/ZBKY6xDJ', true))()
@@ -79,4 +36,4 @@ function callback(Text)
         Button2 = "取消",
         Callback = NotificationBindable1
     })
-    end
+   
