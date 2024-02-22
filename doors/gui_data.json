@@ -1,5 +1,5 @@
 {
 	"ver": "1.0.3[beta]",
-	"changelog": "没有",
-	"loadstring": "没有"
+	"changelog": "没有更新日志",
+	"loadstring": "https://raw.githubusercontent.com/zhangfengshan/zhangfengshan/main/doors/weishanteam-doors.lua"
 }
